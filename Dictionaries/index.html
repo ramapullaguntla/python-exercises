@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Tracker Exercise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            
+            font-size: 18px;
+            margin-bottom: 15px;
+            
+            padding-left: 10px;
+        }
+        
+        .dictionary-box {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #333;
+            overflow-x: auto;
+        }
+        
+        .dictionary-box code {
+            color: #d63384;
+        }
+        
+        .task {
+            background: #f0f7ff;
+            border-left: 4px solid #0d6efd;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 4px;
+        }
+        
+        .task-number {
+            font-weight: bold;
+            
+            margin-bottom: 5px;
+        }
+        
+        .task-description {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Grade Tracker Exercise</h1>
+        
+        
+        <!-- Data Section -->
+        <div class="section">
+            <h2>Student Data</h2>
+            <p>You have been given the following dictionary containing student names and their subject grades:</p>
+            <div class="dictionary-box">
+<pre><code>students = {
+    "Alice": {"Math": 85, "Science": 92, "History": 78, "English": 90},
+    "Bob": {"Math": 70, "Science": 65, "History": 80, "English": 72},
+    "Charlie": {"Math": 95, "Science": 98, "History": 92, "English": 97},
+    "Diana": {"Math": 60, "Science": 55, "History": 70, "English": 65}
+}</code></pre>
+            </div>            
+        </div>
+        
+        <!-- Tasks Section -->
+        <div class="section">
+          
+            
+            <div class="task">
+                <div class="task-number">Task 1: Calculate Average Math Score</div>
+                <div class="task-description">
+                    Find and print the average Math score across all students.
+                </div>
+            </div>
+            
+            <div class="task">
+                <div class="task-number">Task 2: Calculate Average Science Score</div>
+                <div class="task-description">
+                    Find and print the average Science score across all students.
+                </div>
+            </div>
+            
+            <div class="task">
+                <div class="task-number">Task 3: Find Highest English Score</div>
+                <div class="task-description">
+                    Find which student got the highest English score and print both the student's name and their score.
+                </div>
+            </div>
+            
+            <div class="task">
+                <div class="task-number">Task 4: Find Highest History Score</div>
+                <div class="task-description">
+                    Find which student got the highest History score and print both the student's name and their score.
+                </div>
+            </div>
+            
+            <div class="task">
+                <div class="task-number">Task 5: Find Highest Total Score</div>
+                <div class="task-description">
+                    Calculate the total score for each student (sum of all subjects) and find which student has the highest total. Print the student's name and their total score.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Expected Output Section -->
+        <div class="section">
+            <h2>Expected Output</h2>
+            <p>When your program runs correctly, it should output something like:</p>
+            <div class="dictionary-box">
+Average Math score: 77.50<br>
+Average Science score: 77.50<br>
+Highest English score: Charlie (97)<br>
+Highest History score: Charlie (92)<br>
+Highest Total score: Charlie (382)
+            </div>
+        </div>
+               
+    </div>
+</body>
+</html>
